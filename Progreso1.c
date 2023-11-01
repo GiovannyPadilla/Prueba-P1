@@ -6,7 +6,11 @@ int main(){
     printf("Ingrese un numero entero:\n");
     scanf("%d", &num);
     //creacion del codigo para calcular el hexadecimal de un numero//
-    hexa = num%6;
+    if (num>0)
+    {
+        hexa = num%6;
+    }
+        
     printf("El hexadecimal del numero es:%d", hexa);
 
     return 0;
